@@ -1,0 +1,56 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-image: url(./img/erba1.png);
+  background-size: cover;
+  width: 100vw;
+}
+
+
+h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 0;
+  color:black;
+  font-style: italic;
+}
+h2 {
+  color: red;
+  font-weight: bolder;
+  font-size: 110px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#board {
+  width: 540px;
+  height: 540px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  background: url(./img/soil.png);
+  background-size: cover;
+  border:3px solid black;
+  border-radius: 25px;
+}
+
+#board div {
+  /* 540:3 =180*/
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente l'immagine di Mario */
+  align-items: flex-end; /* Posiziona l'immagine di Mario in basso all'interno del div */
+  background: url(./img/pipe.png);
+  background-size: cover;
+
+}
+#board div img {
+  transform: scale(2) translateX(-8px); /* Raddoppia la dimensione dell'immagine */
+  
+  max-width: 100%; /* Imposta la larghezza massima dell'immagine a 100% del div */
+  max-height: 100%; 
+}
