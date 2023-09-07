@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: rgb(255, 216, 222);
+}
+
+#title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+  color: #0000ff;
+  font-style: italic;
+  animation: colorChange 3s infinite alternate;
+}
+
+#title-oscore{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: fuchsia;
+}
+
+#title-yscore{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: fuchsia;
+}
+
+/* Animazione per il cambio di colore */
+@keyframes colorChange {
+  0% {
+    color: #0000ff;
+  }
+  25% {
+    color: #8a2be2;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #8a2be2;
+  }
+  100% {
+    color: #0000ff;
+  }
+}
+
+
+#opponent-choice {
+  width: 240px;
+  height: 240px;
+  background-image: linear-gradient(to bottom, #0000ff, #8a2be2, #00ff00);
+  margin-top: 10px;
+}
+
+#your-choice {
+  width: 240px;
+  height: 240px;
+  background-image: linear-gradient(to bottom, #00ff00e7, #8a2be2, #0000ff);
+  margin-top: 10px;
+}
+
+#choices {
+  width: 240px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#choices img {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  #title {
+    font-size: 50px;
+  }
+  #title-oscore, #title-yscore {
+    font-size: 24px;
+  }
+  #opponent-choice, #your-choice {
+    width: 180px;
+    height: 180px;
+  }
+  #choices {
+    width: 180px;
+  }
+  #choices img {
+    width: 60px;
+    height: 60px;
+  }
+}
