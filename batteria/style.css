@@ -1,0 +1,139 @@
+body {
+  background: linear-gradient(45deg, #6A0DAD, #FFFFFF, #000000);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+@keyframes bounceInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  font-style: italic;
+  color: rgb(105, 73, 180);
+  font-family: "Montserrat", cursive;
+  text-shadow: 4px 0 rgb(57, 4, 218);
+  text-align: center;
+  animation: bounceInDown 2s ease-in-out forwards; 
+
+}
+
+
+.w {
+  background-image: url("img/rullante.png");
+}
+
+.a {
+  background-image: url("img/charleston.png");
+}
+
+.s {
+  background-image: url("img/gcassa.png");
+}
+
+.d {
+  background-image: url("img/tom1.png");
+}
+
+.j {
+  background-image: url("img/tom2.png");
+}
+
+.k {
+  background-image: url("img/tom3.png");
+}
+
+.l {
+  background-image: url("immagini/crash.png");
+}
+
+.set {
+  margin: 0 auto;
+}
+
+
+#batterieContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  height: 100vh;
+}
+
+/* Stile per i bottoni batteria */
+.batteria {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 3rem;
+  font-family: "Montserrat", cursive;
+  font-weight: 900;
+  color: yellow;
+  text-shadow: 3px 0 black;
+  border-radius: 15px;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: white;
+  text-align: center; 
+  margin-top: 50px;
+}
+
+#batteriaViola {
+  width: 500px;
+  height: 368px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3rem; /* Riduci la dimensione del testo per dispositivi mobili */
+  }
+
+  #batterieContainer {
+    text-align: center; /* Allinea il testo al centro del contenitore */
+    display: flex;
+    flex-direction: row; /* Imposta la direzione della colonna per centrare i contenitori verticalmente */
+    align-items: center; /* Allinea i contenitori al centro orizzontalmente */
+    height: auto; /* Imposta l'altezza su auto per adattarsi al contenuto */
+    flex-wrap: wrap;
+    margin-left: 30px;
+  }
+
+  .batteria {
+    font-size: 2rem; /* Riduci la dimensione dei bottoni batteria per dispositivi mobili */
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+  }
+ 
+
+  #batteriaViola {
+    width: 300px; /* Riduci la larghezza dell'immagine per dispositivi mobili */
+    height: auto; /* Imposta l'altezza su auto per mantenere l'aspetto proporzionato */
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
