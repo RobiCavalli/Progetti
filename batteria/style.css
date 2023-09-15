@@ -74,7 +74,7 @@ h1 {
   height: 100vh;
 }
 
-/* Stile per i bottoni batteria */
+
 .batteria {
   outline: none;
   border: 10px solid #404B69;
@@ -103,21 +103,21 @@ h1 {
 
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 3rem; /* Riduci la dimensione del testo per dispositivi mobili */
+    font-size: 3rem; 
   }
 
   #batterieContainer {
-    text-align: center; /* Allinea il testo al centro del contenitore */
+    text-align: center; 
     display: flex;
-    flex-direction: row; /* Imposta la direzione della colonna per centrare i contenitori verticalmente */
-    align-items: center; /* Allinea i contenitori al centro orizzontalmente */
-    height: auto; /* Imposta l'altezza su auto per adattarsi al contenuto */
+    flex-direction: row; 
+    align-items: center; 
+    height: auto; 
     flex-wrap: wrap;
     margin-left: 30px;
   }
 
   .batteria {
-    font-size: 2rem; /* Riduci la dimensione dei bottoni batteria per dispositivi mobili */
+    font-size: 2rem; 
     width: 80px;
     height: 80px;
     margin-top: 20px;
@@ -125,8 +125,8 @@ h1 {
  
 
   #batteriaViola {
-    width: 300px; /* Riduci la larghezza dell'immagine per dispositivi mobili */
-    height: auto; /* Imposta l'altezza su auto per mantenere l'aspetto proporzionato */
+    width: 300px; 
+    height: auto; 
     margin: 0 auto;
   }
 }
