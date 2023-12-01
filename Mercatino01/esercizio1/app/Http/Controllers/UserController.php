@@ -8,14 +8,14 @@ use App\Models\Customer;
 
 class UserController extends Controller
 {
-    public function index() //leggere e mostrare un elenco di tutti i record.
+    public function index() //legge e mostra un elenco di tutti i record.
 
     {
         $customers = Customer::all();
 
     }
 
-    public function store(Request $request)// salvare nel db
+    public function store(Request $request)// salva nel db
     {
         Customer::create($request->all());
     }

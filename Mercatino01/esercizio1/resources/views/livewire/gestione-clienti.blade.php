@@ -26,7 +26,7 @@
         </form>
     </div>
 
-    <!-- Tabella clienti & oggetti-->
+    <!-- clienti & oggetti-->
     <h3 class="text-center text-red-600 font-bold text-xl mb-4">Elenco Clienti e Oggetti in Vendita</h3>
     <div class="mb-20 mt-8">
         <div class="flex justify-center items-center">

@@ -46,10 +46,10 @@ class CustomerController extends Controller
     }
 
     public function destroy(Customer $customer) //elimina
-    {
+    {   // Elimina tutti i riferimenti nella tabella 'customer_items'
         DB::table('customer_items')->where('customer_id', $customer->id)->delete();
 
-        // Ora puoi eliminare il customer
+        //Elimina customer
         $customer->delete();
 
         return response()->json(null, 204);
